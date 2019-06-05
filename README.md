@@ -1,2 +1,1 @@
-# css-seed
-CSS practice
+运行 yarn run start，打开http://localhost:8080查看效果

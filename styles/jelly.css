@@ -1,0 +1,30 @@
+.jelly {
+  font-size: inherit;
+  font-family: inherit;
+  color: #fff;
+  padding: .5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+}
+
+.jelly:hover {
+  cursor: pointer;
+  animation: jelly .5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, .9);
+  }
+  75% {
+    transform: scale(.95, 1.05);
+  }
+}
