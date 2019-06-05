@@ -1,0 +1,28 @@
+.slide {
+  z-index: 1;
+  position: relative;
+}
+
+.slide:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fc2f70;
+  transform-origin: center bottom;
+  transform: scaleY(0);
+  transition: transform .25s ease-in-out;
+}
+
+/* 
+transform-origin:设定变换的准线或准点
+比如：transform-origin：center bottom;就是以中下方为准线进行缩放
+ */
+
+.slide:hover::before {
+  transform-origin: center top;
+  transform: scaleY(1);
+}
